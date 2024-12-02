@@ -1,0 +1,69 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/inputNominalPower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Номінальна потужність (кВт)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/inputEfficiency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Коефіцієнт корисної дії (η)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/inputCosPhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Коефіцієнт потужності (cos φ)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/inputQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Кількість ЕП"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/inputUsageFactor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Коефіцієнт використання"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/inputReactiveFactor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Коефіцієнт реактивної потужності (tg φ)"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+</ScrollView>
